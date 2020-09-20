@@ -16,7 +16,8 @@
 		<!-- maven-plugin-version -->
 		<surefire.version>2.22.2</surefire.version>
 		<war.version>3.2.3</war.version>
-		<compiler.version>3.8.1</compiler.version>	
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
 
 
@@ -52,15 +53,6 @@
 		<finalName>spring-project</finalName>
 		<!-- KZN Changing the plugin configuration to use Java Version 11 KZN -->
 		<plugins>
-			<!-- KZN Changing the plugin configuration to use Java Version 11 KZN -->
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>${compiler.version}</version>
-				<configuration>
-					<release>1.8</release>  <!--or <release>10</release> -->
-				</configuration>
-			</plugin>
 			<!-- KZN No web.xml file for configuration KZN -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
